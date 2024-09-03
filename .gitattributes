@@ -1,0 +1,2 @@
+# Define estilo de quebra de linha LF (Unix-style) para todos os arquivos
+* text=auto eol=lf

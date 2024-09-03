@@ -5,26 +5,26 @@
 *                 text=auto
 
 # Source code
-*.js              text
+*.js              text eol=lf
 
 # Documentation
-*.markdown        text diff=markdown
-*.md              text diff=markdown
-*.mdwn            text diff=markdown
-*.mdown           text diff=markdown
-*.mkd             text diff=markdown
-*.mkdn            text diff=markdown
+*.markdown        text eol=lf diff=markdown
+*.md              text eol=lf diff=markdown
+*.mdwn            text eol=lf diff=markdown
+*.mdown           text eol=lf diff=markdown
+*.mkd             text eol=lf diff=markdown
+*.mkdn            text eol=lf diff=markdown
 
 # Configs
-.editorconfig     text
-.env.*            text
-.gitattributes    text
+.editorconfig     text eol=lf
+.env.*            text eol=lf
+.gitattributes    text eol=lf
 package.json      text eol=lf
 package-lock.json text eol=lf -diff
-*.yaml            text
-*.yml             text
+*.yaml            text eol=lf
+*.yml             text eol=lf
 # Fixes syntax highlighting on GitHub to allow comments
-tsconfig.json     linguist-language=JSON-with-Comments
+tsconfig.json     eol=lf linguist-language=JSON-with-Comments
 
 # Ignore files (like .npmignore or .gitignore)
-*.*ignore         text
+*.*ignore         text eol=lf

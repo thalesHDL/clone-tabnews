@@ -1,0 +1,30 @@
+# Auto detect
+##   Handle line endings automatically for files detected as
+##   text and leave all files detected as binary untouched.
+##   This will handle all files NOT defined below.
+*                 text=auto
+
+# Source code
+*.js              text
+
+# Documentation
+*.markdown        text diff=markdown
+*.md              text diff=markdown
+*.mdwn            text diff=markdown
+*.mdown           text diff=markdown
+*.mkd             text diff=markdown
+*.mkdn            text diff=markdown
+
+# Configs
+.editorconfig     text
+.env.*            text
+.gitattributes    text
+package.json      text eol=lf
+package-lock.json text eol=lf -diff
+*.yaml            text
+*.yml             text
+# Fixes syntax highlighting on GitHub to allow comments
+tsconfig.json     linguist-language=JSON-with-Comments
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore         text

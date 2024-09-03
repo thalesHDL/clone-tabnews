@@ -1,2 +1,21 @@
-# Define estilo de quebra de linha LF (Unix-style) para todos os arquivos
-* text=auto eol=lf
+# Auto detect
+* text=auto
+
+# Source code
+*.js              text
+
+# Documentation
+*.markdown        text diff=markdown
+*.md              text diff=markdown
+*.mdwn            text diff=markdown
+*.mdown           text diff=markdown
+*.mkd             text diff=markdown
+*.mkdn            text diff=markdown
+
+# Configs
+.gitattributes    text
+package.json      text eol=lf
+package-lock.json text eol=lf -diff
+*.yaml            text
+*.yml             text
+tsconfig.json     linguist-language=JSON-with-Comments
